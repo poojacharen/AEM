@@ -1,0 +1,17 @@
+CMS : Content Management System
+It is a tool to create the website and manage the content of the websites dynamically.
+
+Why CMS?
+It provides a GUI(Graphical User Interface) with tools to create, edit and pblish web content without the need to write the code from scratch
+
+CMS has 2 components : 
+1. Content Management Application (CMA)
+2. Content Delivery Application (CDA)
+
+Different CMS Tools:
+- WordPress
+- Joomla
+- Drupal
+- CrownPeak
+- Tradion
+- AEM etc...
