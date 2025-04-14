@@ -1,0 +1,11 @@
+Application layer would comrise of certain modules of AEM
+1. Sites - wich has your templates, pages and components 
+2. Assets - which is the digital asset management or DAM that would have your media or content
+
+AEM - Typical Architecture 
+
+Author
+o
+|
+
+Author/Devs
