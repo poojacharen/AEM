@@ -1,0 +1,12 @@
+3. Apache Sling - It's a open-source web framework utilizes within the AEM architecture, manages the processing of requests and responses within the system
+                - It operates on top of the OSGi framework and assumes responsibility for mapping webste URL's to corresponding content within the content repo
+                - Employing a REST like API, sling facilitates request handling and resource mapping to the content repo
+                - It adopts a resource oriented approach, wherein each resource corresponds to a node within teh content repo, with the properties of these nodes exposed as request parameters 
+                - This setup enables developers to readily access and modify repo content through a straightforward and consistent API
+                - Furthermore, sling offers a robust scripting engine supporting various languages such as JavaScript, Ruby and Groovy
+                - Developers leverage this functioanlity to script request processing and response generation, thus simplifying the creation of custom components and apps interfacing with
+                  content repo
+
+Summary:
+Sling serves as a critical component within the AEM acrhitecture providing a fundamental framework for request handling and content repo interaction
+It's capabiities empower developers to effortlessly craft custom components and applications capable of accessing and manipulating repo content
