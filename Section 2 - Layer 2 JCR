@@ -1,0 +1,10 @@
+2. Java Content Repository (JCR) - The content repo is a core component of the AEM architecture
+                                 - The content repo is a hierarchical, tree like structure where each node in the tree represents a piece of content such a page or an image
+                                 - It's responsible for storing, managing and retrieving all of the content for the website such as pages, images and documents
+AEM uses the Apache Jackrabbit Content Repo, which is a java-based content repo that conforms to the JCR specification
+Jackrabbit provides a number of features that make it well suited for use in AEM such as support for versioning, access control and full tech search.
+                                - The content repo is also accessible via the sling web framework which allows developers to interact with content repo using a RESTful API
+                                - This makes it easy to integrate AEM with other systems and to create custom apps that interact with the content repo
+AEM also includes an optional component called CRX (Content Repo Extreme) which provides a more robust and scalable content repo tha the default Apache Jackrabbit repo
+It provides more efficient data storage and retrieval with the help of advanced data modeling and indexing techniques
+Overall, the content repo is a key component of AEM and plays a critical role in managing and delivering content to website users
