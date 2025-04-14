@@ -1,0 +1,14 @@
+The architecture of AEM is built upon a modular design, which effectively segregates the presentation layer from both the content repository and the business logic 
+
+4 foundational elements :
+                             1. AEM
+                        Application Layer
+                           2. Apache Sling
+                       Web Application Framework
+                         3. Apache Jackrabbit Oak
+                       JCR Repo / Storage Layer
+                         4.  Apache Felix
+                       OSGi Java Container
+
+
+
