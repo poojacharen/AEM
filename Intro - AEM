@@ -1,0 +1,31 @@
+What is AEM ?
+AEM - Adobe Experience Manager
+It's a software solution that's equal part of content managemenet system and digital asset management system
+It's based on technology such as OSGI, Apache SLing and JCR
+
+CMS - Content Management Solution - for building websites, mobile apps and forms
+It is a content management tool for building, managing and deploying websites and related services
+
+
+Key features of AEM
+1. Content Authoring - It provides an intuitive drag and drop interface, enabling clients to easily generate , modify and manage content without the need for extensive 
+                       technical expertise
+                      - It offers reusable templates and components to maintain brand uniformity across digital assets, expediting content production
+                      - Authors can directly edit content within the user interface, ensuring precision and effectiveness in delivering the desired experience to end users
+
+2. Digital Asset Management(DAM) - It enables centralized storage, organization and retrieval of digital assets
+                                 - It boost robust search functionality for swiftly locating images, videos and documents
+                                 - It facilitates the management o rich media content such as image efiting and video transcoding all directly within the platform
+
+3. Multichannel Content Delivery - In the current digital env., it's crucial to connect with audiences through diverse channels 
+                                 - AEM stands out by facilitating multichannel content distribution, guaranteing a uniform and enhanced experience across websites, mobile apps,
+                                   social mdia platforms and beyond
+                                 - With AEM responsive design features content adjusts dynamically to various devices and screen dimensions, ensuring a smooth experience regardless
+                                   of the user's platform preferences 
+4. Cloud Service - AEM provides a cloud native solution, delivering scalability, security and agility
+                 - This enables businesses to swiftly and reliably deploy digital experiences ensuring they consistently have access t the latest features and security enhancements
+                   through automatic updates 
+5. Integration Capabilities - The open architecture of AEM enables effortless incorporation with various Adobe solutions and third - party apps
+                            - By linking with the Adobe Creative Cloud , the platform provides fluid collab among content creators and designers
+                            - Moreover, it integrates with Adobe Analytics furnishes org's with insightful data on user behaviour, empowering them to make informed data-driven decisions
+                        
