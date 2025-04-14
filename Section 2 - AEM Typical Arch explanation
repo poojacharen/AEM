@@ -1,0 +1,14 @@
+First, the content authors create and update content on the website within the authoring environment. Once the content undergoes review and
+approval, it is then published or replicated to the published servers. Additionally, te website employs web servers or te dispatcher module.
+Here's how the process unfolds. When a user accesses a page on your website, the request is initially routed to the load balancer. The load-
+balancer subsequently directs this request to one of the webservers depending on it's capacity. The dispatcher then verifies whether the 
+requested page is actually cached and servers the content if it's available. This caching mechanism ensures that the published servers do not 
+need to render content each time, thereby enhancing the website's performance. If the dispatcherdoes not have the requested content cast, it
+will retrieve the content fron the publish servers and serve it to the end user
+
+Author -------------> Publish 1  <---->   Web Server 1
+                                          Dispatcher 1--|
+                                                        |
+                                                        | --------> Load Balancer ---> Browser
+Author/Devs----------> Publish 2 <---->   Web Server 2  |
+                                          Dispatcher 2--|
