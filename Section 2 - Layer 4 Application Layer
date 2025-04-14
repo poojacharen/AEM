@@ -1,11 +1,46 @@
-Application layer would comrise of certain modules of AEM
+Application layer would comprise of certain modules of AEM
 1. Sites - wich has your templates, pages and components 
 2. Assets - which is the digital asset management or DAM that would have your media or content
 
-AEM - Typical Architecture 
+AEM - Typical Architecture:
 
-Author
-o
-|
+Author -------------> Publish 1  <---->   Web Server 1
+                                          Dispatcher 1--|
+                                                        |
+                                                        | --------> Load Balancer ---> Browser
+Author/Devs----------> Publish 2 <---->   Web Server 2  |
+                                          Dispatcher 2--|
 
-Author/Devs
+Explanation of the above arch:
+AEM comprises 2 primary instances 
+1. Author instance
+2. Publish Instance
+
+-- Author instance is where the content is created and managed by content authors
+-- Equipped with a web-based interface, users can seamlesslt craft and modify pages, images and various content types 
+
+-- Publish instance is where the content is delivered to end-users
+-- Typically deployed on separate servers or server sets. 
+-- These instances communicate via replication.This replication mechanism ensures that the content created and managed on the author
+   instance remains synchronised with the publish instance
+
+- Any modification made to content on author instance are automatically propogated to the publish instance ensuring end-users consistently
+access the latest content
+- In a sense, the author and publish instances are integral components of the AEM arch. Facilitating seamless content creation, management and
+  delivery processes
+- Thereby, enabling businesses to efficiently manage their websites and provide up-to-date content to to end-users
+
+Dispatcher :
+-- It plays a crucial role in AEM arch, functioning as a Caching and Load Balancing component
+-- Positioned in front of the AEM servers, it handles the caching and delivery of content to end-users, enhancing wbsite performance
+-- One of its primary functions is caching responses from AEM servers to eliviate server loads and optimize website performance
+-- Additionally, it ensures content delivery to end-users remain uninterrupted even if one of the AEM servers exepriences downtime
+-- Operating as a reverse proxy, the dispatcher recieves client requests and forwards them to AEM servers
+-- It also offers an added layer of security by allowing config to block requests or filter content delivered to end-users
+-- In terms of Load Balancing, the dispatcher employs a round-robin algorithm to evenly distribute requests among available AEM servers
+-- This balance ensures optimal website performance and scalibility to accommodate high volumes of concurrent users
+-- Typically deployed on a separate server or server set ahead of AEM servers the dispatcher can be tailored to work with various web servers
+   like Apache, IIS and nginx
+
+Overall, the dispatchers caching, load-balancing and security features are integral to the AEM arch enhancing website performance, realibility
+and security
