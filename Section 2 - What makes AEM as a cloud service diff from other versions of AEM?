@@ -1,0 +1,13 @@
+What makes AEM as a cloud service diff from other versions of AEM ?
+1. Author and Publisher instances can be scaled up and down based on the actual traffic site is incurring without any downtime
+2. Any code and configuration chang now can be pushed by checking into GIT repos only via the Cloud Manager
+3. AEM Cloud Service is licensed based on the number of page views for Publish tier
+4. In AEM as a Cloud Service /apps and /libs are immutable whereas /conf,/content,/var are mutable
+
+Explanation of the above points
+- Basically in an AEM application, eployment must be comprised of a single AEM package. This package should in turn contain sub packages that comprise everything required by the application
+to function including coe, configuration or any supporting baseline content.
+- On the other hand AEM is a cloud service requires a separation of content and code, which means a single content package cannot deploy to both /apps or runtime wrietable areas like content, 
+conform etc...
+- Apps are considered immutable areas of failure as they cannot be changed after AEM is started. Any attempt to change an immutable area at runtime will fail
+- Everything else in the repo like /content, /conf, /var folder, home, etc, oak indexes etc... are mutable areas , meaning they can be changed at runtime
