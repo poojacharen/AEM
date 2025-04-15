@@ -1,0 +1,35 @@
+AEM as a Cloud Service Architecture : (Architecture link :https://www.google.com/search?sca_esv=f9f1a50abb3c6f24&sxsrf=AHTn8zplhYaQy7zad-_buQuiobRzEQsRMA:1744737866997&q=aem+as+a+cloud+service+architecture+diagram&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBkzPWUS0OtApxR2914vrjk4ZqZZ4I2IkJifuoUeV0iQtlsVaSqiwnznvC1owt2z2tTdc23Auc6X4y2i7IIF0f-d_O-E9yXafSm5foej9KNb5dB5UNNsgm78dv2qEeljVjLTUov5wWn4x9of_4BNb8vF_2a_9-AxwH0UJGyfTMDuJ_sz_gg&sa=X&ved=2ahUKEwjek6eGx9qMAxV938kDHUNCOrgQtKgLegQIGBAB&biw=1438&bih=690&dpr=1#vhid=6hgWUYTs7VaU8M&vssid=mosaic)
+AEM is a cloud service aims to standardize deployment architectures for all customers, releinving them of many operational concerns.
+
+At high level AEM consists of 3 primary classsifications:
+1. Content Management - which handles content creation, authoring and management
+-- Authors - can utilize various methods such as drag and drop interfaces, form based authoring or even document based authoring through tools like Microsoft SharePoint or Google Docs
+-- AEMs content management offers authors flexibility with various content creation and management options.
+-- The author tire operates as a zero downtime cluster and automatically scales based on authoring activity via Adobe Managed Orchestration Services 
+-- Additionally, digital asset management and business process execution are supported, ensuring brand and organizational alignment
+-- Content uthors ccess AEM authoring using Adobe's Identity Management Service, which is managed through Adobe's Admin Console
+-- Aems authoring service can read and write content from content repo, while Adobe manages a range of maintenance job to ensure optimal performance
+-- The replication service is responsible for publishing or unpublishing content from the AEM author tier or editors to AEMs experienced delivery services
+
+2. Experience Delivery is responsible for delivering high impact experiences to end users, be it websites, headless experiences or any other media including images or video
+-- AEM experience delivery consists of 2 main concerns : 
+1. Edge Delivery Services
+2. Container Orchestration Service
+
+We might be wondering how the authoring can be done using a tool such as Microsoft SharePoint or Google Docs ?
+
+The edge delivery service also known as Next Gen Composability or previously known as Adobe Franklin offers an intuitive method for website creation
+It seamlessly integrates with authoring tools like Microsoft SharePoint or Google Docs
+
+AEM Publish and Preview Tiers are another way to deliver experiences with AEM
+- The Publish Tier enables live production experiences, while 
+- The Preview Tier enbles authors to preview content changes before making them live
+- The AEM Publish Tier consists of a pair of AEM publishers and AEM dispatchers. with the number of pairs scaling automatically based on load and all manged by Adobe's Orchestration service
+
+Adobe's Managed CDN enhances experience delivery or if desired a custom managed CDN can be used 
+
+- Last , is a set of ancillary services that facilitate the management and deployment of custom code to AEM, as well as collab channel that allows customers to interact with Adobe and use
+intelligent bots to help gain insights into AEM as well as with performing certain tasks
+- Git safely stores custom code with distributed version control enabling collaborative development while maintaining data integrity
+- The CI/CD service allows developers and administrators to manage testing and deployment of custom code
+- The CI/CD service reads code from the git service, validates code quality using testing service and finally deloys code to the appropriate areas of AEM content mngmt and experienced delivery
